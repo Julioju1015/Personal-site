@@ -1,0 +1,116 @@
+button:focus{
+    outline: none !important;
+    border: none;
+}
+  
+  .hamburger-menu {
+    width: 45px;
+    height: 45px;
+    background-color: #B19CD9;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    transition: all 0.5s;
+  }
+  
+  .change .hamburger-menu {
+    background-color: #eef0eb;
+  }
+  
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    margin: 2px 0;
+    transform-origin: right;
+    transition: all 0.5s;
+  }
+  
+  .change .line-1 {
+    transform: rotate(-40deg) translateY(-5px);
+    background-color: #B19CD9;
+  }
+  
+  .change .line-2 {
+    opacity: 0;
+  }
+  
+  .change .line-3 {
+    transform: rotate(40deg) translateY(5px);
+    background-color: #B19CD9;
+  }
+  
+  .bg-cover {
+    background-color: #B19CD9;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    z-index: 100;
+    border-radius: 50%;
+    transition: transform 0.5s;
+  }
+  
+  .change .bg-cover {
+    transform: scale(150);
+  }
+  
+  .nav-list {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+  }
+  
+  .change .nav-list {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-item {
+    margin: 1.5vh 0;
+  }
+  
+  .nav-link {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: letter-spacing 0.2s;
+  }
+  
+  .nav-link:hover {
+    letter-spacing: 0.8rem;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 991px){
+    .nav-link{
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 350px){
+    .nav-link{
+      font-size: 17px;
+    }
+  }

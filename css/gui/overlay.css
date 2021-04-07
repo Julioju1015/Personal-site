@@ -1,0 +1,12 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  body{
+    background-color: #262626 !important;
+  }
+  
+  html, body, footer, header{
+    color: white !important;
+  }
+  
